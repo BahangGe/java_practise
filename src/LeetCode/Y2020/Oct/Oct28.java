@@ -2,7 +2,7 @@ package LeetCode.Y2020.Oct;
 
 import java.util.*;
 
-public class Dec28 {
+public class Oct28 {
    /*
     给你一个整数数组 arr，请你帮忙统计数组中每个数的出现次数。
     如果每个数的出现次数都是独一无二的，就返回 true；否则返回false。 
