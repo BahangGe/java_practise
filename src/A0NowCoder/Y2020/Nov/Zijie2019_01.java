@@ -1,6 +1,4 @@
-package NowCoder.Y2020.Nov;
-
-import sun.security.util.Length;
+package A0NowCoder.Y2020.Nov;
 
 import java.util.Scanner;
 

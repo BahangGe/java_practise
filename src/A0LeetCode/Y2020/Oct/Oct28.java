@@ -1,4 +1,4 @@
-package LeetCode.Y2020.Oct;
+package A0LeetCode.Y2020.Oct;
 
 import java.util.*;
 
