@@ -24,5 +24,7 @@ public class IntToBytePrint {
                 System.out.print(t);
 
             }
+            System.out.println();
+            System.out.println(Integer.toBinaryString(a));
         }
 }
