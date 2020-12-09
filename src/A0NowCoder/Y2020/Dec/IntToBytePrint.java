@@ -24,7 +24,14 @@ public class IntToBytePrint {
                 System.out.print(t);
 
             }
-            System.out.println();
+            System.out.println(a);
             System.out.println(Integer.toBinaryString(a));
+            System.out.printf("d:%d   ",a);
+            System.out.printf("o:%o   ",a);
+            System.out.printf("b:%bin   ",a);
+            System.out.printf("x:%x   ",a);
+            int n1 = 70;
+            if (n1 >= 60)
+                System.out.println("及格了");
         }
 }
