@@ -17,6 +17,13 @@ public class demo {
         System.out.println(hong.getAge());
         System.out.println(hong.toString());
         min.setName("xiaomin");
-        System.out.println(min.name);
+        hong.setNameAndAge("xiaoxioahong",18);
+        System.out.println(hong.toString());
+        hong.setNameAndAge(81,"laohong");
+        System.out.println(hong.toString());
+        Person noage=new Person("noage");
+        System.out.println(noage.toString());
+        Person noName=new Person(10);
+        System.out.println(noName.toString());
     }
 }

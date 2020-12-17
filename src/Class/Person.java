@@ -1,5 +1,7 @@
 package Class;
 
+import java.util.Objects;
+
 /**
  * Created with IntelliJ IDEA.
  * User: dell
@@ -9,7 +11,29 @@ package Class;
  * Description:
  */
 public class Person {
+    private String name;
+    private int age;
+
     public Person() {
+    }
+
+    public Person(String name, int age) {
+
+        this.name = name;
+        this.age = age;
+    }
+
+    public Person(String name) {
+        this.name = name;
+        System.out.printf("You haven't set age!(%s,%s)",this.getClass(),this.hashCode());
+        System.out.println();
+    }
+
+    public Person(int age) {
+           this.age=age;
+        System.out.printf("You haven't set name!(%s,%s)",this.getClass(),this.hashCode());
+        System.out.println();
+
     }
 
     @Override
@@ -19,15 +43,6 @@ public class Person {
                 ", age=" + age +
                 '}';
     }
-
-    public Person(String name, int age) {
-
-        this.name = name;
-        this.age = age;
-    }
-
-    public String name;
-    private int age;
 
     public String getName() {
         return name;
@@ -43,5 +58,29 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void setNameAndAge(String name,int age) {
+        this.name=name;
+        this.age=age;
+    }
+    public void setNameAndAge(int age,String name) {
+        this.name=name;
+        this.age=age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age &&
+                Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name, age);
     }
 }
